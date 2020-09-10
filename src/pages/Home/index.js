@@ -16,7 +16,6 @@ export default function Home() {
 
     const fetchData = async () => {
         const { data: { personalDetails } } = await api.get("api/resume")
-        console.log(personalDetails)
         setCandidate(personalDetails)
     }
 
@@ -24,10 +23,6 @@ export default function Home() {
         fetchData()
     }, [])
 
-    useEffect(() => {
-
-
-    }, [candidate])
 
     return (
         <>
@@ -37,7 +32,7 @@ export default function Home() {
                     color="#FEEE63"
                     title="Carlos Ricardo Ziegler"
                     subtitle="Developer"
-                    image={MemberImg}
+                    picture={MemberImg}
                 />
                 <div className="contact-container">
                     <h3 className="contact-info-title">
@@ -69,7 +64,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="btn-group">
-                    <LinkButton text="Weiter" target="/motivation" style="primary" />
+                    <LinkButton text="Weiter" target="/motivation" btnStyle="primary" />
                 </div>
             </>}
         </>

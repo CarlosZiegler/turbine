@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import moment from 'moment-business-days'
-import api from '../../services/api';
 
 import Navbar from '../../components/Navbar'
 import InfoContainer from '../../components/InfoContainer'
@@ -61,7 +60,7 @@ export default function Home() {
                 />
             </div>
             <div className="btn-group">
-                <LinkButton text="Zurück" target="/" style="primary" />
+                <LinkButton text="Zurück" target="/" btnStyle="primary" />
             </div>
 
         </>
