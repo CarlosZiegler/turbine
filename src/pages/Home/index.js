@@ -4,6 +4,7 @@ import api from '../../services/api';
 import Navbar from '../../components/Navbar'
 import MemberContainer from '../../components/MemberContainer'
 import FieldInfo from '../../components/FieldInfo'
+import LinkButton from '../../components/LinkButton'
 
 import MemberImg from '../../assets/ziegler.svg'
 
@@ -31,8 +32,6 @@ export default function Home() {
     return (
         <>
             <Navbar />
-
-
             {candidate && <>
                 <MemberContainer
                     color="#FEEE63"
@@ -41,17 +40,20 @@ export default function Home() {
                     image={MemberImg}
                 />
                 <div className="contact-container">
+                    <h3 className="contact-info-title">
+                        Kontakte Daten:
+                    </h3>
                     <FieldInfo
                         label="Vorname"
                         data={candidate.firstName}
                     />
                     <FieldInfo
                         label="Nachname"
-                        data={candidate.firstName}
+                        data={candidate.lastName}
                     />
                     <FieldInfo
                         label="Email"
-                        data={candidate.links.email}
+                        data={candidate.email}
                     />
                     <FieldInfo
                         label="Mobilnummer"
@@ -65,8 +67,8 @@ export default function Home() {
                         label="Github-Profil"
                         data={candidate.links.github}
                     />
-
                 </div>
+                <LinkButton text="Weiter" target="/motivation" style="primary" />
             </>}
         </>
     )

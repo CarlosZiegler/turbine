@@ -7,10 +7,16 @@ body {
   background:#121212;
   max-width: 85%;
   margin: 0 auto;
-  color: #ffffff
+  color: #ffffff;
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  color: #fff;
+  text-decoration: none; /* no underline */
 }

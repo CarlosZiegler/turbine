@@ -9,8 +9,8 @@ export default function MemberContainer({ image, color, title, subtitle }) {
                 <img src={image} alt={`photo ${title}`} className="member-image" />
             </div>
             <div className="member-labels">
-                <h2 className="member-title">{title}</h2>
-                <h3 className="member-subtitle">{subtitle}</h3>
+                <p className="member-title">{title}</p>
+                <p className="member-subtitle">{subtitle}</p>
             </div>
         </article>
     )

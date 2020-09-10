@@ -1,0 +1,15 @@
+.btn{
+    padding:11px;
+}
+.primary {
+    color: #121212;
+    background: #fff;
+    display: block;
+    width: 110px; 
+    margin: 30px auto;
+    text-align:center;
+    
+}
+.secondary{
+
+}

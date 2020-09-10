@@ -1,3 +1,11 @@
 .field-info{
     font-size:0.8rem;
+    margin:15px 0;
+}
+.field-label{
+    margin:0;
+}
+.field-data{
+    margin:5px 0;
+    text-decoration: underline;
 }
