@@ -60,7 +60,9 @@ export default function Home() {
                     answer={workDate}
                 />
             </div>
-            <LinkButton text="Weiter" target="/motivation" style="primary" />
+            <div className="btn-group">
+                <LinkButton text="Zurück" target="/" style="primary" />
+            </div>
 
         </>
     )

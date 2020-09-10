@@ -68,7 +68,9 @@ export default function Home() {
                         data={candidate.links.github}
                     />
                 </div>
-                <LinkButton text="Weiter" target="/motivation" style="primary" />
+                <div className="btn-group">
+                    <LinkButton text="Weiter" target="/motivation" style="primary" />
+                </div>
             </>}
         </>
     )

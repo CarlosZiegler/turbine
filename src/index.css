@@ -20,3 +20,11 @@ a {
   color: #fff;
   text-decoration: none; /* no underline */
 }
+.btn-group{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.btn-group :nth-child(2){
+  margin-left:10px;
+}
