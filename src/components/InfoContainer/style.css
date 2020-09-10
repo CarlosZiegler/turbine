@@ -1,0 +1,14 @@
+.motivation{
+
+}
+.motivation-question{
+    font-weight:bold;
+}
+.motivation-answer-container{
+    background:#fff;
+    padding:10px;
+}
+.motivation-answer-text{
+    color:#121212;
+    font-size:0.8rem;
+}
